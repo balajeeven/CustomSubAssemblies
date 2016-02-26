@@ -33,8 +33,8 @@ node {
     echo "Deployed to production"
 }
 
-def mvn(args) {
-    sh "${tool 'Maven 3.x'}/bin/mvn ${args}"
+def gradle(args) {
+    sh "${tool 'gradle-2.7'}/bin/gradle ${args}"
 }
 
 def runTests(duration) {
